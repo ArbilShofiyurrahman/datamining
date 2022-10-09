@@ -1,4 +1,8 @@
-# Welcome to your Jupyter Book
+# Penambangan Data
+
+penambangan data adalah suatu proses pengerukan atau pengumpulan informasi penting dari suatu data yang besar.
+
+Proses data mining seringkali menggunakan metode statistika, matematika, hingga memanfaatkan teknologi artificial intelligence.
 
 This is a small sample book to give you a feel for how book content is
 structured.
