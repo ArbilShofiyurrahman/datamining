@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Rumus prepocessing data Min Max &#8212; Arbil Shofiyurrahman</title>
+    <title>Ensamble Stacking (Tugas 8) &#8212; Arbil Shofiyurrahman</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -157,7 +157,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Rumus prepocessing data Min Max
+   Ensamble Stacking (Tugas 8)
   </a>
  </li>
 </ul>
@@ -366,22 +366,22 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rumus-prepocessing-data-min-max">
    Rumus prepocessing data Min Max
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#save-model-prepocessing">
    Save model prepocessing
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#encoder-label">
    Encoder Label
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#predict">
    Predict
   </a>
@@ -395,7 +395,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Rumus prepocessing data Min Max</h1>
+                <h1>Ensamble Stacking (Tugas 8)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -405,22 +405,22 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rumus-prepocessing-data-min-max">
    Rumus prepocessing data Min Max
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#save-model-prepocessing">
    Save model prepocessing
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#encoder-label">
    Encoder Label
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#predict">
    Predict
   </a>
@@ -435,7 +435,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <p>#Ensamble Stacking (Tugas 12)</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="ensamble-stacking-tugas-8">
+<h1>Ensamble Stacking (Tugas 8)<a class="headerlink" href="#ensamble-stacking-tugas-8" title="Permalink to this headline">#</a></h1>
+<p>Nama : Arbil Shofiyurrahman</p>
+<p>NIM  : 210411100016</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -500,7 +503,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bde6ae26-45c6-411a-b37d-f2fc4f2829ec">
+  <div id="df-f6622229-859c-4c7c-a5aa-5fac6b2e7400">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -800,7 +803,7 @@ title="Print to PDF"
 </table>
 <p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bde6ae26-45c6-411a-b37d-f2fc4f2829ec')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f6622229-859c-4c7c-a5aa-5fac6b2e7400')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -851,12 +854,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bde6ae26-45c6-411a-b37d-f2fc4f2829ec button.colab-df-convert');
+          document.querySelector('#df-f6622229-859c-4c7c-a5aa-5fac6b2e7400 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bde6ae26-45c6-411a-b37d-f2fc4f2829ec');
+          const element = document.querySelector('#df-f6622229-859c-4c7c-a5aa-5fac6b2e7400');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -886,7 +889,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7db27a2d-9468-419b-9ee7-578669100e30">
+  <div id="df-ec09714b-d62f-4ef5-b731-61cb3f9ad182">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1174,7 +1177,7 @@ title="Print to PDF"
 </table>
 <p>1151 rows × 19 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7db27a2d-9468-419b-9ee7-578669100e30')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ec09714b-d62f-4ef5-b731-61cb3f9ad182')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1225,12 +1228,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7db27a2d-9468-419b-9ee7-578669100e30 button.colab-df-convert');
+          document.querySelector('#df-ec09714b-d62f-4ef5-b731-61cb3f9ad182 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7db27a2d-9468-419b-9ee7-578669100e30');
+          const element = document.querySelector('#df-ec09714b-d62f-4ef5-b731-61cb3f9ad182');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1252,7 +1255,7 @@ title="Print to PDF"
 </div></div>
 </div>
 <section id="rumus-prepocessing-data-min-max">
-<h1>Rumus prepocessing data Min Max<a class="headerlink" href="#rumus-prepocessing-data-min-max" title="Permalink to this headline">#</a></h1>
+<h2>Rumus prepocessing data Min Max<a class="headerlink" href="#rumus-prepocessing-data-min-max" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
 \displaystyle x = \frac{x_{i} - x_{min}}{x_{max} - x_{min}}
@@ -1274,7 +1277,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-941ca8d0-cbbe-4f3e-aed2-05fbbf39e9ee">
+  <div id="df-204753b7-bc79-43d9-b66b-a556a56392bb">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1539,7 +1542,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-941ca8d0-cbbe-4f3e-aed2-05fbbf39e9ee')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-204753b7-bc79-43d9-b66b-a556a56392bb')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1590,12 +1593,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-941ca8d0-cbbe-4f3e-aed2-05fbbf39e9ee button.colab-df-convert');
+          document.querySelector('#df-204753b7-bc79-43d9-b66b-a556a56392bb button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-941ca8d0-cbbe-4f3e-aed2-05fbbf39e9ee');
+          const element = document.querySelector('#df-204753b7-bc79-43d9-b66b-a556a56392bb');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1618,7 +1621,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="save-model-prepocessing">
-<h1>Save model prepocessing<a class="headerlink" href="#save-model-prepocessing" title="Permalink to this headline">#</a></h1>
+<h2>Save model prepocessing<a class="headerlink" href="#save-model-prepocessing" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
@@ -1642,7 +1645,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="encoder-label">
-<h1>Encoder Label<a class="headerlink" href="#encoder-label" title="Permalink to this headline">#</a></h1>
+<h2>Encoder Label<a class="headerlink" href="#encoder-label" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
@@ -1801,58 +1804,56 @@ acuracy n = 20 = 0.658008658008658
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 21 = 0.658008658008658
+acuracy n = 22 = 0.6666666666666666
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 22 = 0.6666666666666666
-acuracy n = 23 = 0.6666666666666666
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 23 = 0.6666666666666666
 acuracy n = 24 = 0.6666666666666666
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 25 = 0.6666666666666666
+acuracy n = 25 = 0.6666666666666666
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 26 = 0.6666666666666666
-acuracy n = 27 = 0.6536796536796536
-acuracy n = 28 = 0.6623376623376623
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 29 = 0.6536796536796536
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 27 = 0.6536796536796536
+acuracy n = 28 = 0.6623376623376623
+acuracy n = 29 = 0.6536796536796536
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 30 = 0.658008658008658
-acuracy n = 31 = 0.658008658008658
-acuracy n = 32 = 0.658008658008658
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 33 = 0.6536796536796536
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 31 = 0.658008658008658
+acuracy n = 32 = 0.658008658008658
+acuracy n = 33 = 0.6536796536796536
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 34 = 0.6493506493506493
-acuracy n = 35 = 0.6536796536796536
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 36 = 0.6493506493506493
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 35 = 0.6536796536796536
+acuracy n = 36 = 0.6493506493506493
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 37 = 0.645021645021645
-acuracy n = 38 = 0.645021645021645
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 39 = 0.6406926406926406
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 38 = 0.645021645021645
+acuracy n = 39 = 0.6406926406926406
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 40 = 0.6406926406926406
-acuracy n = 41 = 0.645021645021645
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 42 = 0.6406926406926406
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 41 = 0.645021645021645
+acuracy n = 42 = 0.6406926406926406
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 43 = 0.6406926406926406
-acuracy n = 44 = 0.6406926406926406
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 45 = 0.6493506493506493
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 44 = 0.6406926406926406
+acuracy n = 45 = 0.6493506493506493
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 46 = 0.6406926406926406
@@ -1866,9 +1867,7 @@ acuracy n = 48 = 0.6536796536796536
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 50 = 0.645021645021645
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 51 = 0.6363636363636364
+acuracy n = 51 = 0.6363636363636364
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 52 = 0.6363636363636364
@@ -2000,9 +1999,7 @@ acuracy n = 101 = 0.6406926406926406
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 102 = 0.6406926406926406
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 103 = 0.6406926406926406
+acuracy n = 103 = 0.6406926406926406
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 104 = 0.645021645021645
@@ -2010,15 +2007,11 @@ acuracy n = 105 = 0.645021645021645
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 106 = 0.645021645021645
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 107 = 0.645021645021645
+acuracy n = 107 = 0.645021645021645
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 108 = 0.645021645021645
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 109 = 0.645021645021645
+acuracy n = 109 = 0.645021645021645
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 110 = 0.645021645021645
@@ -2201,6 +2194,12 @@ acuracy n = 105 = 0.645021645021645
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 169 = 0.6406926406926406
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 170 = 0.6363636363636364
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>acuracy n = 171 = 0.6363636363636364
+</pre></div>
+</div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
 <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">22</span><span class="o">-</span><span class="mi">9</span><span class="n">a95ece27548</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">n</span><span class="p">:</span>
@@ -2273,20 +2272,34 @@ acuracy n = 105 = 0.645021645021645
 <span class="g g-Whitespace">    </span><span class="mi">218</span> 
 
 <span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/ensemble/_forest.py</span> in <span class="ni">_parallel_build_trees</span><span class="nt">(tree, forest, X, y, sample_weight, tree_idx, n_trees, verbose, class_weight, n_samples_bootstrap)</span>
-<span class="g g-Whitespace">    </span><span class="mi">166</span>         <span class="n">n_samples</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">167</span>         <span class="k">if</span> <span class="n">sample_weight</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">168</span>             <span class="n">curr_sample_weight</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n_samples</span><span class="p">,),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">169</span>         <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">170</span>             <span class="n">curr_sample_weight</span> <span class="o">=</span> <span class="n">sample_weight</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">183</span>             <span class="n">curr_sample_weight</span> <span class="o">*=</span> <span class="n">compute_sample_weight</span><span class="p">(</span><span class="s2">&quot;balanced&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">indices</span><span class="o">=</span><span class="n">indices</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">184</span> 
+<span class="ne">--&gt; </span><span class="mi">185</span>         <span class="n">tree</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="n">curr_sample_weight</span><span class="p">,</span> <span class="n">check_input</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">186</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">187</span>         <span class="n">tree</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">,</span> <span class="n">check_input</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
-<span class="nn">/usr/local/lib/python3.7/dist-packages/numpy/core/numeric.py</span> in <span class="ni">ones</span><span class="nt">(shape, dtype, order, like)</span>
-<span class="g g-Whitespace">    </span><span class="mi">203</span> 
-<span class="g g-Whitespace">    </span><span class="mi">204</span>     <span class="n">a</span> <span class="o">=</span> <span class="n">empty</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">order</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">205</span>     <span class="n">multiarray</span><span class="o">.</span><span class="n">copyto</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">casting</span><span class="o">=</span><span class="s1">&#39;unsafe&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">206</span>     <span class="k">return</span> <span class="n">a</span>
-<span class="g g-Whitespace">    </span><span class="mi">207</span> 
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/tree/_classes.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight, check_input, X_idx_sorted)</span>
+<span class="g g-Whitespace">    </span><span class="mi">940</span>             <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">941</span>             <span class="n">check_input</span><span class="o">=</span><span class="n">check_input</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">942</span>             <span class="n">X_idx_sorted</span><span class="o">=</span><span class="n">X_idx_sorted</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">943</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">944</span>         <span class="k">return</span> <span class="bp">self</span>
 
-<span class="nn">&lt;__array_function__ internals&gt;</span> in <span class="ni">copyto</span><span class="nt">(*args, **kwargs)</span>
+<span class="nn">/usr/local/lib/python3.7/dist-packages/sklearn/tree/_classes.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight, check_input, X_idx_sorted)</span>
+<span class="g g-Whitespace">    </span><span class="mi">212</span>             <span class="n">y_encoded</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">213</span>             <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_outputs_</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">214</span>                 <span class="n">classes_k</span><span class="p">,</span> <span class="n">y_encoded</span><span class="p">[:,</span> <span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y</span><span class="p">[:,</span> <span class="n">k</span><span class="p">],</span> <span class="n">return_inverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">215</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">classes_k</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">216</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">n_classes_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">classes_k</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="nn">&lt;__array_function__ internals&gt;</span> in <span class="ni">unique</span><span class="nt">(*args, **kwargs)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/numpy/lib/arraysetops.py</span> in <span class="ni">unique</span><span class="nt">(ar, return_index, return_inverse, return_counts, axis)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span> 
+<span class="g g-Whitespace">    </span><span class="mi">137</span> 
+<span class="ne">--&gt; </span><span class="mi">138</span> <span class="nd">@array_function_dispatch</span><span class="p">(</span><span class="n">_unique_dispatcher</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span> <span class="k">def</span> <span class="nf">unique</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span> <span class="n">return_index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">140</span>            <span class="n">return_counts</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -2907,7 +2920,7 @@ acuracy n = 499 = 0.6406926406926406
 </div>
 </section>
 <section id="predict">
-<h1>Predict<a class="headerlink" href="#predict" title="Permalink to this headline">#</a></h1>
+<h2>Predict<a class="headerlink" href="#predict" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">,:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -3274,6 +3287,7 @@ acuracy n = 499 = 0.6406926406926406
   </div>
 </div></div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
