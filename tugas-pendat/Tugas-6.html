@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decission Tree (Tugas 6) &#8212; Arbil Shofiyurrahman</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -122,16 +121,6 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Tugas-2.html">
-   Diskritasi (Tugas 2)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Tugas-3.html">
-   Implementasi K-NN Algorithm (Tugas 3)
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="Tugas-4.html">
    Implementasi Naive Bayes  (Tugas 4)
   </a>
@@ -158,7 +147,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas-8.html">
-   Rumus prepocessing data Min Max
+   Ensamble Stacking (Tugas 8)
   </a>
  </li>
 </ul>
@@ -416,11 +405,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="decission-tree-tugas-6">
+  <div class="tex2jax_ignore mathjax_ignore section" id="decission-tree-tugas-6">
 <h1>Decission Tree (Tugas 6)<a class="headerlink" href="#decission-tree-tugas-6" title="Permalink to this headline">#</a></h1>
 <p>Nama : Arbil Shofiyurrahman</p>
 <p>NIM  : 210411100016</p>
-<section id="dasar-teori">
+<div class="section" id="dasar-teori">
 <h2>Dasar Teori<a class="headerlink" href="#dasar-teori" title="Permalink to this headline">#</a></h2>
 <p><strong>Pengertian Decision Tree</strong></p>
 <p>Decision Tree (Pohon keputusan) adalah jenis pembelajaran mesin terawasi(supervise) yang digunakan untuk mengkategorikan atau membuat prediksi berdasarkan bagaimana serangkaian pertanyaan sebelumnya dijawab.
@@ -435,8 +424,8 @@ Pohon keputusan variabel kontinu adalah pohon keputusan dengan variabel target k
 </ol>
 <p><strong>Rumus Gini Index</strong>
 $<span class="math notranslate nohighlight">\( Gini Index = 1-Σ_i^n (P_i)^2 \)</span>$</p>
-</section>
-<section id="implementasi">
+</div>
+<div class="section" id="implementasi">
 <h2>Implementasi<a class="headerlink" href="#implementasi" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -460,7 +449,7 @@ $<span class="math notranslate nohighlight">\( Gini Index = 1-Σ_i^n (P_i)^2 \)<
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-26dfdee7-0497-4ec7-b5c4-a725b7d57654">
+  <div id="df-200c013f-9342-4d26-b8ae-d7aa2679cc76">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -580,7 +569,7 @@ $<span class="math notranslate nohighlight">\( Gini Index = 1-Σ_i^n (P_i)^2 \)<
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-26dfdee7-0497-4ec7-b5c4-a725b7d57654')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-200c013f-9342-4d26-b8ae-d7aa2679cc76')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -631,12 +620,12 @@ $<span class="math notranslate nohighlight">\( Gini Index = 1-Σ_i^n (P_i)^2 \)<
 
       <script>
         const buttonEl =
-          document.querySelector('#df-26dfdee7-0497-4ec7-b5c4-a725b7d57654 button.colab-df-convert');
+          document.querySelector('#df-200c013f-9342-4d26-b8ae-d7aa2679cc76 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-26dfdee7-0497-4ec7-b5c4-a725b7d57654');
+          const element = document.querySelector('#df-200c013f-9342-4d26-b8ae-d7aa2679cc76');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -685,8 +674,8 @@ $<span class="math notranslate nohighlight">\( Gini Index = 1-Σ_i^n (P_i)^2 \)<
 <img alt="../_images/Tugas-6_7_0.png" src="../_images/Tugas-6_7_0.png" />
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -700,7 +689,7 @@ $<span class="math notranslate nohighlight">\( Gini Index = 1-Σ_i^n (P_i)^2 \)<
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./tugas-pendat"
         },
         predefinedOutput: true

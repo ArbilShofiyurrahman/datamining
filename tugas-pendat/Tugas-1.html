@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dissimilarity Binary Symetric (Tugas 1) &#8212; Arbil Shofiyurrahman</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -54,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Diskritasi (Tugas 2)" href="Tugas-2.html" />
+    <link rel="next" title="Implementasi Naive Bayes (Tugas 4)" href="Tugas-4.html" />
     <link rel="prev" title="Penambangan Data" href="../intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -122,16 +121,6 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Tugas-2.html">
-   Diskritasi (Tugas 2)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Tugas-3.html">
-   Implementasi K-NN Algorithm (Tugas 3)
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="Tugas-4.html">
    Implementasi Naive Bayes  (Tugas 4)
   </a>
@@ -158,7 +147,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas-8.html">
-   Rumus prepocessing data Min Max
+   Ensamble Stacking (Tugas 8)
   </a>
  </li>
 </ul>
@@ -440,10 +429,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="dissimilarity-binary-symetric-tugas-1">
+  <div class="tex2jax_ignore mathjax_ignore section" id="dissimilarity-binary-symetric-tugas-1">
 <h1>Dissimilarity Binary Symetric (Tugas 1)<a class="headerlink" href="#dissimilarity-binary-symetric-tugas-1" title="Permalink to this headline">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="penambangan-data">
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="penambangan-data">
 <h1>Penambangan Data<a class="headerlink" href="#penambangan-data" title="Permalink to this headline">#</a></h1>
 <p>Nama : Arbil Shofiyurrahman</p>
 <p>NIM  : 210411100016</p>
@@ -458,7 +447,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4ff6e07d-8861-40d6-b068-e0483f484c35">
+  <div id="df-54096349-e799-40dd-8c5f-43d5bdbe3c12">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -614,7 +603,7 @@ title="Print to PDF"
 </table>
 <p>1000 rows × 8 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4ff6e07d-8861-40d6-b068-e0483f484c35')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-54096349-e799-40dd-8c5f-43d5bdbe3c12')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -665,12 +654,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4ff6e07d-8861-40d6-b068-e0483f484c35 button.colab-df-convert');
+          document.querySelector('#df-54096349-e799-40dd-8c5f-43d5bdbe3c12 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4ff6e07d-8861-40d6-b068-e0483f484c35');
+          const element = document.querySelector('#df-54096349-e799-40dd-8c5f-43d5bdbe3c12');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -707,7 +696,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<section id="kita-seleksi-fitur">
+<div class="section" id="kita-seleksi-fitur">
 <h2>Kita seleksi Fitur<a class="headerlink" href="#kita-seleksi-fitur" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Gender</p></li>
@@ -721,7 +710,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-6fdb4864-9ddf-40c5-a934-c8c6baea96a9">
+  <div id="df-8b7d6b7c-8fc7-49de-a390-52a3cfd4daab">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -774,7 +763,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6fdb4864-9ddf-40c5-a934-c8c6baea96a9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8b7d6b7c-8fc7-49de-a390-52a3cfd4daab')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -825,12 +814,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6fdb4864-9ddf-40c5-a934-c8c6baea96a9 button.colab-df-convert');
+          document.querySelector('#df-8b7d6b7c-8fc7-49de-a390-52a3cfd4daab button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6fdb4864-9ddf-40c5-a934-c8c6baea96a9');
+          const element = document.querySelector('#df-8b7d6b7c-8fc7-49de-a390-52a3cfd4daab');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -908,7 +897,7 @@ Take all values of ‘lunch’</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e09b582a-8a74-4cb3-ad1f-7ac8912a6c33">
+  <div id="df-af67be0b-e00f-43f7-8ee3-dd3fbcfd5527">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -961,7 +950,7 @@ Take all values of ‘lunch’</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e09b582a-8a74-4cb3-ad1f-7ac8912a6c33')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-af67be0b-e00f-43f7-8ee3-dd3fbcfd5527')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1012,12 +1001,12 @@ Take all values of ‘lunch’</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e09b582a-8a74-4cb3-ad1f-7ac8912a6c33 button.colab-df-convert');
+          document.querySelector('#df-af67be0b-e00f-43f7-8ee3-dd3fbcfd5527 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e09b582a-8a74-4cb3-ad1f-7ac8912a6c33');
+          const element = document.querySelector('#df-af67be0b-e00f-43f7-8ee3-dd3fbcfd5527');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1081,7 +1070,7 @@ Take all values of ‘lunch’</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-27c0268f-6dae-4fc3-be5c-12cf57615520">
+  <div id="df-f01dc3a1-3fcf-4104-85c3-b281f40ffb5c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1119,7 +1108,7 @@ Take all values of ‘lunch’</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-27c0268f-6dae-4fc3-be5c-12cf57615520')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f01dc3a1-3fcf-4104-85c3-b281f40ffb5c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1170,12 +1159,12 @@ Take all values of ‘lunch’</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-27c0268f-6dae-4fc3-be5c-12cf57615520 button.colab-df-convert');
+          document.querySelector('#df-f01dc3a1-3fcf-4104-85c3-b281f40ffb5c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-27c0268f-6dae-4fc3-be5c-12cf57615520');
+          const element = document.querySelector('#df-f01dc3a1-3fcf-4104-85c3-b281f40ffb5c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1204,7 +1193,7 @@ Take all values of ‘lunch’</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3aa2ea99-c2b4-4818-9795-24d9e36ab819">
+  <div id="df-656770fa-24d2-45ef-933c-6cbe7d36dc4a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1257,7 +1246,7 @@ Take all values of ‘lunch’</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3aa2ea99-c2b4-4818-9795-24d9e36ab819')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-656770fa-24d2-45ef-933c-6cbe7d36dc4a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1308,12 +1297,12 @@ Take all values of ‘lunch’</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3aa2ea99-c2b4-4818-9795-24d9e36ab819 button.colab-df-convert');
+          document.querySelector('#df-656770fa-24d2-45ef-933c-6cbe7d36dc4a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3aa2ea99-c2b4-4818-9795-24d9e36ab819');
+          const element = document.querySelector('#df-656770fa-24d2-45ef-933c-6cbe7d36dc4a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1405,8 +1394,8 @@ Take all values of ‘lunch’</p>
 </div>
 </div>
 </div>
-</section>
-<section id="dissimilarity-binary-symetric-value-formula">
+</div>
+<div class="section" id="dissimilarity-binary-symetric-value-formula">
 <h2>Dissimilarity Binary Symetric Value Formula<a class="headerlink" href="#dissimilarity-binary-symetric-value-formula" title="Permalink to this headline">#</a></h2>
 <hr class="docutils" />
 <div class="math notranslate nohighlight">
@@ -1473,8 +1462,8 @@ Take all values of ‘lunch’</p>
 </div>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1488,7 +1477,7 @@ Take all values of ‘lunch’</p>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./tugas-pendat"
         },
         predefinedOutput: true
@@ -1510,10 +1499,10 @@ Take all values of ‘lunch’</p>
             <p class="prev-next-title">Penambangan Data</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Tugas-2.html" title="next page">
+    <a class='right-next' id="next-link" href="Tugas-4.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Diskritasi (Tugas 2)</p>
+        <p class="prev-next-title">Implementasi Naive Bayes  (Tugas 4)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Implementasi Naive Bayes (Tugas 4) &#8212; Arbil Shofiyurrahman</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -53,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Implementasi K-Means Clustering (Tugas 5)" href="Tugas-5.html" />
-    <link rel="prev" title="Implementasi K-NN Algorithm (Tugas 3)" href="Tugas-3.html" />
+    <link rel="prev" title="Dissimilarity Binary Symetric (Tugas 1)" href="Tugas-1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -119,16 +118,6 @@ const thebe_selector_output = ".output, .cell_output"
    Dissimilarity Binary Symetric (Tugas 1)
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Tugas-2.html">
-   Diskritasi (Tugas 2)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Tugas-3.html">
-   Implementasi K-NN Algorithm (Tugas 3)
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Implementasi Naive Bayes  (Tugas 4)
@@ -156,7 +145,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas-8.html">
-   Rumus prepocessing data Min Max
+   Ensamble Stacking (Tugas 8)
   </a>
  </li>
 </ul>
@@ -428,7 +417,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="implementasi-naive-bayes-tugas-4">
+  <div class="tex2jax_ignore mathjax_ignore section" id="implementasi-naive-bayes-tugas-4">
 <h1>Implementasi Naive Bayes  (Tugas 4)<a class="headerlink" href="#implementasi-naive-bayes-tugas-4" title="Permalink to this headline">#</a></h1>
 <p>Nama : Arbil Shofiyurrahman</p>
 <p>NIM : 210411100016</p>
@@ -436,14 +425,14 @@ title="Print to PDF"
 <li><p>Baca data bunga <em>iris</em></p></li>
 <li><p>Implementasi algoritma Naive Bayes Gaussian untuk menentukan probabilitas kelas dari data tes</p></li>
 </ol>
-<section id="baca-data">
+<div class="section" id="baca-data">
 <h2>Baca Data<a class="headerlink" href="#baca-data" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Baca data dengan <em>library pandas</em> <em>italicized text</em></p></li>
 <li><p>Data <a class="reference external" href="https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv">Bunga Iris</a></p></li>
 <li><p>Data <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Hr2LPptj5niQCBXm3cUG4dSxTow0J9FY/edit?usp=sharing&amp;ouid=104778244268493691619&amp;rtpof=true&amp;sd=true">Hitung Manual</a></p></li>
 </ul>
-<section id="persiapan-lingkungan">
+<div class="section" id="persiapan-lingkungan">
 <h3>Persiapan Lingkungan<a class="headerlink" href="#persiapan-lingkungan" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Impor <em>train_test_split</em> dari <em>sklearn</em></p></li>
@@ -507,7 +496,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a4682e7a-ae55-45fc-9ace-8fffb5b48c2d">
+  <div id="df-bace6f9c-1c39-454d-878a-544955735964">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -578,7 +567,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a4682e7a-ae55-45fc-9ace-8fffb5b48c2d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bace6f9c-1c39-454d-878a-544955735964')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -629,12 +618,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a4682e7a-ae55-45fc-9ace-8fffb5b48c2d button.colab-df-convert');
+          document.querySelector('#df-bace6f9c-1c39-454d-878a-544955735964 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a4682e7a-ae55-45fc-9ace-8fffb5b48c2d');
+          const element = document.querySelector('#df-bace6f9c-1c39-454d-878a-544955735964');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -668,8 +657,8 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section id="hitung-data">
+</div>
+<div class="section" id="hitung-data">
 <h3>Hitung Data<a class="headerlink" href="#hitung-data" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Pisahkan kolom “variety” dari <em>dataframe</em></p></li>
@@ -699,7 +688,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7e0306df-6c70-4360-9aa7-fecba646f95f">
+  <div id="df-7b2305b8-8be4-4678-ac62-1bb53d8edaa4">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -764,7 +753,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7e0306df-6c70-4360-9aa7-fecba646f95f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7b2305b8-8be4-4678-ac62-1bb53d8edaa4')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -815,12 +804,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7e0306df-6c70-4360-9aa7-fecba646f95f button.colab-df-convert');
+          document.querySelector('#df-7b2305b8-8be4-4678-ac62-1bb53d8edaa4 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7e0306df-6c70-4360-9aa7-fecba646f95f');
+          const element = document.querySelector('#df-7b2305b8-8be4-4678-ac62-1bb53d8edaa4');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -955,9 +944,9 @@ f1-score_random_Forest : 1.000
 </div>
 </div>
 </div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -971,7 +960,7 @@ f1-score_random_Forest : 1.000
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./tugas-pendat"
         },
         predefinedOutput: true
@@ -986,11 +975,11 @@ f1-score_random_Forest : 1.000
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Tugas-3.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Tugas-1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Implementasi K-NN Algorithm (Tugas 3)</p>
+            <p class="prev-next-title">Dissimilarity Binary Symetric (Tugas 1)</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Tugas-5.html" title="next page">
