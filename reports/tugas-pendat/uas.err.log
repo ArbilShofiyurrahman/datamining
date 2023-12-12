@@ -1,0 +1,59 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_core/utils/__init__.py", line 173, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import cv2
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+
+folder_path = r"D:/semester 5/Pengolahan Citra/ORL"
+
+list_images = []
+labels = []
+
+folder_names = sorted(os.listdir(folder_path), key=lambda x: int(x))
+for folder_name in folder_names:
+    folder_full_path = os.path.join(folder_path, folder_name)
+
+    if os.path.isdir(folder_full_path):
+        label = int(folder_name)
+        files = os.listdir(folder_full_path)
+        # Urutkan nama file berdasarkan angka terakhir dalam nama file
+        files = sorted(files, key=lambda x: int(x.split('_')[-1].split('.')[0]))
+
+        for filename in files:
+            image_path = os.path.join(folder_full_path, filename)
+            image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+            list_images.append(image)
+            labels.append(label)
+
+matriks_gambar = np.array(list_images)
+matriks_gambar.shape
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
+[0;32m<ipython-input-1-957b9f641e87>[0m in [0;36m<cell line: 11>[0;34m()[0m
+[1;32m      9[0m [0mlabels[0m [0;34m=[0m [0;34m[[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[1;32m     10[0m [0;34m[0m[0m
+[0;32m---> 11[0;31m [0mfolder_names[0m [0;34m=[0m [0msorted[0m[0;34m([0m[0mos[0m[0;34m.[0m[0mlistdir[0m[0;34m([0m[0mfolder_path[0m[0;34m)[0m[0;34m,[0m [0mkey[0m[0;34m=[0m[0;32mlambda[0m [0mx[0m[0;34m:[0m [0mint[0m[0;34m([0m[0mx[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     12[0m [0;32mfor[0m [0mfolder_name[0m [0;32min[0m [0mfolder_names[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     13[0m     [0mfolder_full_path[0m [0;34m=[0m [0mos[0m[0;34m.[0m[0mpath[0m[0;34m.[0m[0mjoin[0m[0;34m([0m[0mfolder_path[0m[0;34m,[0m [0mfolder_name[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'D:/semester 5/Pengolahan Citra/ORL'
+

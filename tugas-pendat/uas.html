@@ -1,0 +1,1129 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>\(UAS\) \(Pengolahan\) \(Citra\) \(Semester\) \(Gasal\) \(2023/2024\) &#8212; Arbil Shofiyurrahman</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tugas-pendat/uas';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Ensamble Stacking (Tugas 8)" href="Tugas-8.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/arbil.jpeg" class="logo__image only-light" alt="Arbil Shofiyurrahman - Home"/>
+    <script>document.write(`<img src="../_static/arbil.jpeg" class="logo__image only-dark" alt="Arbil Shofiyurrahman - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Penambangan Data
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Tugas-1.html">Dissimilarity Binary Symetric (Tugas 1)</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Tugas-2.html">Diskritasi (Tugas 2)</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Tugas-3.html">Implementasi K-NN Algorithm (Tugas 3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas-4.html">Implementasi Naive Bayes  (Tugas 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas-5.html">Implementasi K-Means Clustering (Tugas 5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas-6.html">Decission Tree (Tugas 6)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas-7.html">Best Accuracy Between Normalization vs Unnomarlization  (Tugas 7)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas-8.html">Ensamble Stacking (Tugas 8)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><span class="math notranslate nohighlight">\(UAS\)</span> <span class="math notranslate nohighlight">\(Pengolahan\)</span> <span class="math notranslate nohighlight">\(Citra\)</span> <span class="math notranslate nohighlight">\(Semester\)</span> <span class="math notranslate nohighlight">\(Gasal\)</span> <span class="math notranslate nohighlight">\(2023/2024\)</span></a></li>
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftugas-pendat/uas.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/tugas-pendat/uas.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>UAS Pengolahan Citra Semester Gasal 2023/2024</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><span class="math notranslate nohighlight">\(UAS\)</span> <span class="math notranslate nohighlight">\(Pengolahan\)</span> <span class="math notranslate nohighlight">\(Citra\)</span> <span class="math notranslate nohighlight">\(Semester\)</span> <span class="math notranslate nohighlight">\(Gasal\)</span> <span class="math notranslate nohighlight">\(2023/2024\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pengolahan-citra-wajah"><span class="math notranslate nohighlight">\(Pengolahan\)</span> <span class="math notranslate nohighlight">\(Citra\)</span> <span class="math notranslate nohighlight">\(Wajah\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-component-analysis-pca"><span class="math notranslate nohighlight">\(Principal\)</span> <span class="math notranslate nohighlight">\(Component\)</span> <span class="math notranslate nohighlight">\(Analysis\)</span> <span class="math notranslate nohighlight">\((PCA)\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi"><span class="math notranslate nohighlight">\(Klasifikasi\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidean-distance"><span class="math notranslate nohighlight">\(Euclidean\)</span> <span class="math notranslate nohighlight">\(Distance\)</span></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memanggil-data-dari-local"><span class="math notranslate nohighlight">\(Memanggil\)</span> <span class="math notranslate nohighlight">\(Data\)</span> <span class="math notranslate nohighlight">\(dari\)</span> <span class="math notranslate nohighlight">\(local\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memisahkan-data-training-dan-data-testing">Memisahkan Data Training dan Data Testing</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-fitur"><span class="math notranslate nohighlight">\(Ekstraksi\)</span> <span class="math notranslate nohighlight">\(Fitur\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-pca-principal-component-analysis">Menggunakan PCA (Principal Component Analysis)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-rata-rata">1. Hitung rata-rata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-zero-mean">2. Hitung zero mean</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-covariance">3. Hitung Covariance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvaluenya-dan-eigenvectornya">4. Cari EigenValuenya dan EigenVectornya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-proyeksi-dan-bobot">5. Hitung Proyeksi dan Bobot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi-data">Klasifikasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uji-data">Uji Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><span class="math notranslate nohighlight">\(Kesimpulan\)</span></a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="uas-pengolahan-citra-semester-gasal-2023-2024">
+<h1><span class="math notranslate nohighlight">\(UAS\)</span> <span class="math notranslate nohighlight">\(Pengolahan\)</span> <span class="math notranslate nohighlight">\(Citra\)</span> <span class="math notranslate nohighlight">\(Semester\)</span> <span class="math notranslate nohighlight">\(Gasal\)</span> <span class="math notranslate nohighlight">\(2023/2024\)</span><a class="headerlink" href="#uas-pengolahan-citra-semester-gasal-2023-2024" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Nama\)</span> : ARBIL SHOFIYURRAHMAN</p></li>
+<li><p><span class="math notranslate nohighlight">\(NIM\)</span> : 210411100016</p></li>
+</ul>
+</section>
+<section id="pengolahan-citra-wajah">
+<h1><span class="math notranslate nohighlight">\(Pengolahan\)</span> <span class="math notranslate nohighlight">\(Citra\)</span> <span class="math notranslate nohighlight">\(Wajah\)</span><a class="headerlink" href="#pengolahan-citra-wajah" title="Permalink to this heading">#</a></h1>
+<p>adalah subdisiplin dari pengolahan citra yang khusus fokus pada teknik dan metode untuk menganalisis, mengenali, dan memanipulasi citra yang menggambarkan wajah manusia. Pengolahan citra wajah memiliki berbagai aplikasi, termasuk pengenalan wajah, verifikasi identitas, analisis ekspresi wajah, dan keamanan.</p>
+</section>
+<section id="principal-component-analysis-pca">
+<h1><span class="math notranslate nohighlight">\(Principal\)</span> <span class="math notranslate nohighlight">\(Component\)</span> <span class="math notranslate nohighlight">\(Analysis\)</span> <span class="math notranslate nohighlight">\((PCA)\)</span><a class="headerlink" href="#principal-component-analysis-pca" title="Permalink to this heading">#</a></h1>
+<p>adalah teknik statistik yang digunakan untuk mengurangi dimensi dari dataset yang kompleks, dengan tetap mempertahankan informasi yang paling signifikan. PCA bertujuan untuk mengidentifikasi pola dalam data dan merepresentasikannya dalam bentuk yang lebih mudah dimengerti dan dapat diinterpretasi.</p>
+</section>
+<section id="klasifikasi">
+<h1><span class="math notranslate nohighlight">\(Klasifikasi\)</span><a class="headerlink" href="#klasifikasi" title="Permalink to this heading">#</a></h1>
+<p>adalah mengidentifikasi kategori atau kelas yang paling sesuai untuk suatu objek atau data berdasarkan karakteristik atau fitur tertentu. Tujuan utama dari algoritme klasifikasi adalah untuk membuat model yang dapat memprediksi kelas atau label suatu instance baru berdasarkan pengalaman belajar dari data yang telah diberikan sebelumnya.</p>
+</section>
+<section id="euclidean-distance">
+<h1><span class="math notranslate nohighlight">\(Euclidean\)</span> <span class="math notranslate nohighlight">\(Distance\)</span><a class="headerlink" href="#euclidean-distance" title="Permalink to this heading">#</a></h1>
+<p>adalah metrik jarak yang umum digunakan dalam klasifikasi. Metrik ini mengukur jarak geometris langsung antara dua titik dalam ruang Euclidean. Dalam konteks klasifikasi, Jarak Euclidean sering digunakan untuk mengukur seberapa dekat atau jauh dua instance (data atau vektor fitur) dalam ruang fitur.</p>
+<section id="memanggil-data-dari-local">
+<h2><span class="math notranslate nohighlight">\(Memanggil\)</span> <span class="math notranslate nohighlight">\(Data\)</span> <span class="math notranslate nohighlight">\(dari\)</span> <span class="math notranslate nohighlight">\(local\)</span><a class="headerlink" href="#memanggil-data-dari-local" title="Permalink to this heading">#</a></h2>
+<p>keseluruhan matriks 400 x 112 x 92 merepresentasikan Data ORL yang terdiri dari 400 gambar, di mana setiap gambar memiliki resolusi 112 x 92 piksel.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">folder_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;D:/semester 5/Pengolahan Citra/ORL&quot;</span>
+
+<span class="n">list_images</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">folder_names</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder_path</span><span class="p">),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">folder_name</span> <span class="ow">in</span> <span class="n">folder_names</span><span class="p">:</span>
+    <span class="n">folder_full_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="n">folder_name</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">folder_full_path</span><span class="p">):</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">folder_name</span><span class="p">)</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder_full_path</span><span class="p">)</span>
+        <span class="c1"># Urutkan nama file berdasarkan angka terakhir dalam nama file</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]))</span>
+
+        <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+            <span class="n">image_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder_full_path</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+            <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">IMREAD_GRAYSCALE</span><span class="p">)</span>
+            <span class="n">list_images</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+            <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+
+<span class="n">matriks_gambar</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list_images</span><span class="p">)</span>
+<span class="n">matriks_gambar</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-1-957b9f641e87&gt;</span> in <span class="ni">&lt;cell line: 11&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">labels</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> 
+<span class="ne">---&gt; </span><span class="mi">11</span> <span class="n">folder_names</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder_path</span><span class="p">),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="k">for</span> <span class="n">folder_name</span> <span class="ow">in</span> <span class="n">folder_names</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>     <span class="n">folder_full_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="n">folder_name</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;D:/semester 5/Pengolahan Citra/ORL&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Matriks gambar dengan ukuran 112 x 92 piksel untuk 400 gambar ditumpuk menjadi satu matriks besar menggunakan reshap.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matriks_gambar</span> <span class="o">=</span> <span class="n">matriks_gambar</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matriks_gambar</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matriks_gambar</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(400, 10304)
+[[ 48  53  43 ...  46  46  46]
+ [ 60  63  62 ...  33  33  34]
+ [ 40  30  53 ...  29  28  28]
+ ...
+ [123 122 121 ...  40  40  39]
+ [119 119 119 ...  92  91  90]
+ [122 123 125 ...  36  35  35]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="memisahkan-data-training-dan-data-testing">
+<h2>Memisahkan Data Training dan Data Testing<a class="headerlink" href="#memisahkan-data-training-dan-data-testing" title="Permalink to this heading">#</a></h2>
+<p>Data training yang digunakan adalah 80% dan data testing yang digunakan adalah 20%</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="n">jumlah_citra_train</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">jumlah_citra_test</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">-</span> <span class="n">jumlah_citra_train</span>
+
+<span class="n">data_training</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">data_testing</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">labels_training</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">labels_testing</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">matriks_gambar</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="n">kelas</span> <span class="o">=</span> <span class="n">matriks_gambar</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">10</span><span class="p">]</span>
+    <span class="n">kelas_labels</span> <span class="o">=</span> <span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">10</span><span class="p">]</span>
+    <span class="n">data_train</span><span class="p">,</span> <span class="n">data_test</span><span class="p">,</span> <span class="n">labels_train</span><span class="p">,</span> <span class="n">labels_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">kelas</span><span class="p">,</span> <span class="n">kelas_labels</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="n">jumlah_citra_test</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">data_training</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">data_train</span><span class="p">)</span>
+    <span class="n">data_testing</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">data_test</span><span class="p">)</span>
+    <span class="n">labels_training</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">labels_train</span><span class="p">)</span>
+    <span class="n">labels_testing</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">labels_test</span><span class="p">)</span>
+
+<span class="n">data_training</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data_training</span><span class="p">)</span>
+<span class="n">data_testing</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data_testing</span><span class="p">)</span>
+<span class="n">labels_training</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">labels_training</span><span class="p">)</span>
+<span class="n">labels_testing</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">labels_testing</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ukuran data training: &quot;</span><span class="p">,</span><span class="n">data_training</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data_training</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ukuran data testing: &quot;</span><span class="p">,</span><span class="n">data_testing</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data_testing</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ukuran data training:  (320, 10304)
+[[ 37  46  49 ...  38  38  37]
+ [ 63  75  75 ...  38  38  39]
+ [ 48  53  43 ...  46  46  46]
+ ...
+ [123 122 121 ...  40  40  39]
+ [119 119 119 ...  92  91  90]
+ [125 123 122 ...  39  40  41]]
+Ukuran data testing:  (80, 10304)
+[[ 40  30  53 ...  29  28  28]
+ [ 34  29  30 ...  37  36  35]
+ [ 33  34  36 ...  28  28  29]
+ ...
+ [ 86  88  90 ...  84 123 105]
+ [127 127 127 ...  91  91  91]
+ [122 123 125 ...  36  35  35]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Persiapan data sudah selesai, selanjutnya akan masuk ke tahap Ekstrasi Fitur</p>
+</section>
+</section>
+<section id="ekstraksi-fitur">
+<h1><span class="math notranslate nohighlight">\(Ekstraksi\)</span> <span class="math notranslate nohighlight">\(Fitur\)</span><a class="headerlink" href="#ekstraksi-fitur" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menggunakan-pca-principal-component-analysis">
+<h1>Menggunakan PCA (Principal Component Analysis)<a class="headerlink" href="#menggunakan-pca-principal-component-analysis" title="Permalink to this heading">#</a></h1>
+<section id="hitung-rata-rata">
+<h2>1. Hitung rata-rata<a class="headerlink" href="#hitung-rata-rata" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data_training</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">mean_matrix</span> <span class="o">=</span> <span class="n">mean_matrix</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rata-rata Matrix = &quot;</span><span class="p">,</span> <span class="n">mean_matrix</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mean_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rata-rata Matrix =  [[85.746875 85.659375 85.509375 ... 76.85625  75.825    75.54375 ]]
+(1, 10304)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="hitung-zero-mean">
+<h2>2. Hitung zero mean<a class="headerlink" href="#hitung-zero-mean" title="Permalink to this heading">#</a></h2>
+<p>Matrix Zero Mean dihitung dengan matrix data training dikurangin matrix rata-rata.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zero_matrix</span> <span class="o">=</span> <span class="n">data_training</span> <span class="o">-</span> <span class="n">mean_matrix</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">zero_matrix</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">zero_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-48.746875 -39.659375 -36.509375 ... -38.85625  -37.825    -38.54375 ]
+ [-22.746875 -10.659375 -10.509375 ... -38.85625  -37.825    -36.54375 ]
+ [-37.746875 -32.659375 -42.509375 ... -30.85625  -29.825    -29.54375 ]
+ ...
+ [ 37.253125  36.340625  35.490625 ... -36.85625  -35.825    -36.54375 ]
+ [ 33.253125  33.340625  33.490625 ...  15.14375   15.175     14.45625 ]
+ [ 39.253125  37.340625  36.490625 ... -37.85625  -35.825    -34.54375 ]]
+(320, 10304)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="hitung-covariance">
+<h2>3. Hitung Covariance<a class="headerlink" href="#hitung-covariance" title="Permalink to this heading">#</a></h2>
+<p>Covariance dihitung dengan mengalikan matrix Zero Mean dengan transposenya, lalu dibagi dengan jumlah sample-1</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">covariance_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">zero_matrix</span><span class="p">,</span> <span class="n">zero_matrix</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<span class="n">jumlah_sampel</span> <span class="o">=</span> <span class="n">zero_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span>
+<span class="n">covariance_matrix</span> <span class="o">/=</span> <span class="n">jumlah_sampel</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix Covariance dari Data Training&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">covariance_matrix</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Covariance Matrix shape&quot;</span><span class="p">,</span><span class="n">covariance_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matrix Covariance dari Data Training
+[[58378.55642306 38755.91007705 30937.68303944 ...   483.94335487
+  11928.30133881  1702.11090973]
+ [38755.91007705 83483.6367718  22678.26239876 ... 10635.43180511
+  20523.89010252  8565.29841953]
+ [30937.68303944 22678.26239876 45017.21090973 ...   252.87247909
+   6762.71949124   761.35664837]
+ ...
+ [  483.94335487 10635.43180511   252.87247909 ... 39927.89141522
+   5597.56601357 29421.60128983]
+ [11928.30133881 20523.89010252  6762.71949124 ...  5597.56601357
+  43835.56036114  4739.18811389]
+ [ 1702.11090973  8565.29841953   761.35664837 ... 29421.60128983
+   4739.18811389 39632.55254375]]
+Covariance Matrix shape (320, 320)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="cari-eigenvaluenya-dan-eigenvectornya">
+<h2>4. Cari EigenValuenya dan EigenVectornya<a class="headerlink" href="#cari-eigenvaluenya-dan-eigenvectornya" title="Permalink to this heading">#</a></h2>
+<p>Setelah EigenValue dan EigenVector ditemukan. Lalu urutkan EigenValuenya. Setelah EigenValue diurutkan, maka urutkan EigenVector sesuai dengan index EigenVectornya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">covariance_matrix</span><span class="p">)</span>
+
+<span class="c1"># Mengurutkan eigenvalues dan eigenvectors</span>
+<span class="n">sorted_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">sorted_eigenvalues</span> <span class="o">=</span> <span class="n">eigenvalues</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+<span class="n">sorted_eigenvectors</span> <span class="o">=</span> <span class="n">eigenvectors</span><span class="p">[:,</span> <span class="n">sorted_indices</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalues yang sudah diurutkan:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sorted_eigenvalues</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Eigenvectors yang sudah diurutkan:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sorted_eigenvectors</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sorted_eigenvalues</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sorted_eigenvectors</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvalues yang sudah diurutkan:
+[ 2.82768825e+06  2.07950787e+06  1.09917490e+06  9.29259616e+05
+  8.10457374e+05  5.57696640e+05  3.99796079e+05  3.62780041e+05
+  3.16873049e+05  2.88352042e+05  2.35665579e+05  2.23959913e+05
+  1.78852657e+05  1.76066452e+05  1.58345204e+05  1.46596464e+05
+  1.43106684e+05  1.38385446e+05  1.20695139e+05  1.15313465e+05
+  1.11396929e+05  1.06902749e+05  9.50143849e+04  9.08934591e+04
+  8.60583230e+04  8.43036552e+04  7.96972950e+04  7.71125337e+04
+  7.58779907e+04  7.21303988e+04  7.18823274e+04  6.79541638e+04
+  6.54677373e+04  6.38900121e+04  6.18364325e+04  6.06688694e+04
+  5.74827067e+04  5.56775726e+04  5.18567171e+04  5.12304995e+04
+  4.98853757e+04  4.95450484e+04  4.80587998e+04  4.52027895e+04
+  4.46292150e+04  4.26035946e+04  4.18361808e+04  4.12336129e+04
+  4.00581627e+04  3.90713925e+04  3.85700333e+04  3.78488463e+04
+  3.75496816e+04  3.55308449e+04  3.46679095e+04  3.41106687e+04
+  3.37101450e+04  3.31210769e+04  3.29113469e+04  3.18673544e+04
+  3.07673506e+04  3.03648937e+04  2.96372444e+04  2.87997909e+04
+  2.86257927e+04  2.83653676e+04  2.77100602e+04  2.71126705e+04
+  2.67712563e+04  2.63761765e+04  2.58905137e+04  2.53975752e+04
+  2.48694325e+04  2.44985577e+04  2.40705720e+04  2.36144692e+04
+  2.34085929e+04  2.31085736e+04  2.27041416e+04  2.26016420e+04
+  2.19312010e+04  2.17390253e+04  2.13323501e+04  2.11943160e+04
+  2.08898294e+04  2.04202096e+04  2.02320611e+04  1.99074513e+04
+  1.97605861e+04  1.94422200e+04  1.91253350e+04  1.89527341e+04
+  1.86747368e+04  1.85666087e+04  1.83532979e+04  1.78932437e+04
+  1.75891015e+04  1.71762157e+04  1.71272123e+04  1.69306910e+04
+  1.66875651e+04  1.64848790e+04  1.62408894e+04  1.60805556e+04
+  1.60142251e+04  1.56313905e+04  1.55574097e+04  1.53917942e+04
+  1.53221273e+04  1.50973372e+04  1.48114219e+04  1.46882123e+04
+  1.45448954e+04  1.44646247e+04  1.42784599e+04  1.42233622e+04
+  1.38423908e+04  1.37349024e+04  1.35779397e+04  1.35076240e+04
+  1.34454133e+04  1.33131864e+04  1.32098884e+04  1.30852837e+04
+  1.29832194e+04  1.27262534e+04  1.26573477e+04  1.25018159e+04
+  1.24552722e+04  1.24315690e+04  1.20966321e+04  1.20808576e+04
+  1.20144486e+04  1.18683218e+04  1.18055503e+04  1.16567758e+04
+  1.15802880e+04  1.14777244e+04  1.13471470e+04  1.12639097e+04
+  1.11029066e+04  1.10052686e+04  1.09751723e+04  1.09421930e+04
+  1.08591119e+04  1.05388363e+04  1.04977315e+04  1.04546142e+04
+  1.03672919e+04  1.03056090e+04  1.02278401e+04  1.01889233e+04
+  1.00551096e+04  1.00233100e+04  9.94145174e+03  9.89326359e+03
+  9.77370758e+03  9.72827796e+03  9.61046523e+03  9.47359785e+03
+  9.35613011e+03  9.23271977e+03  9.17182745e+03  9.01331415e+03
+  8.98701680e+03  8.89252100e+03  8.85821091e+03  8.81504546e+03
+  8.75855219e+03  8.71609225e+03  8.54791317e+03  8.50291671e+03
+  8.46379373e+03  8.35475792e+03  8.28854640e+03  8.24234727e+03
+  8.17881805e+03  8.13235763e+03  8.12310959e+03  8.04016796e+03
+  7.95695117e+03  7.94977346e+03  7.76935889e+03  7.72144176e+03
+  7.69791095e+03  7.58645204e+03  7.56210480e+03  7.50101586e+03
+  7.44815471e+03  7.36049318e+03  7.31584021e+03  7.28266520e+03
+  7.23825520e+03  7.14769311e+03  7.05564632e+03  7.03080671e+03
+  6.95890761e+03  6.93077556e+03  6.88748586e+03  6.84862582e+03
+  6.82973400e+03  6.76074562e+03  6.67493747e+03  6.62007710e+03
+  6.58419174e+03  6.52399486e+03  6.47368987e+03  6.39272858e+03
+  6.35884687e+03  6.31940965e+03  6.28521824e+03  6.23878565e+03
+  6.18932595e+03  6.15507768e+03  6.13041171e+03  6.08601101e+03
+  5.99058228e+03  5.96561240e+03  5.92604076e+03  5.80185073e+03
+  5.75241512e+03  5.69535971e+03  5.66662977e+03  5.63802612e+03
+  5.57234274e+03  5.54539212e+03  5.51726396e+03  5.49020223e+03
+  5.41552290e+03  5.34580517e+03  5.32113935e+03  5.29064265e+03
+  5.23113335e+03  5.19790166e+03  5.16019421e+03  5.11441955e+03
+  5.07430576e+03  5.05763673e+03  4.99627717e+03  4.93059531e+03
+  4.88615582e+03  4.80807866e+03  4.78523097e+03  4.72536744e+03
+  4.71106592e+03  4.66317495e+03  4.63498504e+03  4.60264509e+03
+  4.57848270e+03  4.56090166e+03  4.52275930e+03  4.45089721e+03
+  4.43232431e+03  4.39318867e+03  4.36328673e+03  4.30191331e+03
+  4.27135466e+03  4.21598683e+03  4.18959473e+03  4.16975908e+03
+  4.15517884e+03  4.07553029e+03  4.05349410e+03  3.98169905e+03
+  3.96369219e+03  3.93741217e+03  3.92714655e+03  3.91130819e+03
+  3.86223180e+03  3.82966001e+03  3.80469171e+03  3.72776091e+03
+  3.68864939e+03  3.65865004e+03  3.62487185e+03  3.62312220e+03
+  3.55552932e+03  3.51595326e+03  3.46565896e+03  3.44924260e+03
+  3.41953118e+03  3.38845678e+03  3.34935316e+03  3.32771123e+03
+  3.27473329e+03  3.24291633e+03  3.21157044e+03  3.18605423e+03
+  3.16758664e+03  3.13073800e+03  3.08033277e+03  3.03156673e+03
+  3.01999240e+03  3.01095122e+03  2.95747573e+03  2.92834476e+03
+  2.88771356e+03  2.83551076e+03  2.82698646e+03  2.77277387e+03
+  2.76629291e+03  2.68120846e+03  2.65643148e+03  2.56206729e+03
+  2.53271186e+03  2.49723628e+03  2.47488276e+03  2.41618454e+03
+  2.29782018e+03  2.27446845e+03  2.21424121e+03  2.16477271e+03
+  2.10849381e+03  2.05809293e+03  1.93039212e+03  1.86914317e+03
+  1.73345794e+03  1.45935709e+03  1.34101079e+03 -3.90456583e-15]
+
+Eigenvectors yang sudah diurutkan:
+[[ 0.0792372   0.03643064  0.06443032 ... -0.00415757 -0.00464606
+  -0.0559017 ]
+ [ 0.12120868  0.04199831  0.01200586 ...  0.01651665 -0.00659723
+  -0.0559017 ]
+ [ 0.04923632  0.04467881  0.10046488 ... -0.01564892  0.01399044
+  -0.0559017 ]
+ ...
+ [ 0.02560201  0.03888238 -0.0813169  ... -0.03756019 -0.00244234
+  -0.0559017 ]
+ [ 0.04303852  0.05370939 -0.04116369 ...  0.00793708  0.00481057
+  -0.0559017 ]
+ [ 0.01899812  0.04210817 -0.08241184 ... -0.01658762  0.01021762
+  -0.0559017 ]]
+(320,)
+(320, 320)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="hitung-proyeksi-dan-bobot">
+<h2>5. Hitung Proyeksi dan Bobot<a class="headerlink" href="#hitung-proyeksi-dan-bobot" title="Permalink to this heading">#</a></h2>
+<p>Proyeksi didapatkan dengan mengalikan transpose matrix Zero Mean kali Eigen Vector, lalu ditranspose. Ukuran matrix proyeksi adalah 280x10304. Lalu bobot didapatkan dengan mengalikan matrix data training dengan transpose matrix proyeksi. Ukuran matrix bobot menjadi 280x280.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">proyeksi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">zero_matrix</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">sorted_eigenvectors</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="n">bobot_proyeksi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">data_training</span><span class="p">,</span> <span class="n">proyeksi</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">proyeksi</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">proyeksi</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">bobot_proyeksi</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">bobot_proyeksi</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(320, 10304)
+[[-1.01764864e+02 -9.28193630e+01 -9.66258656e+01 ... -2.04986457e+02
+  -1.93065670e+02 -2.19918873e+02]
+ [ 3.77535183e+02  3.80989858e+02  3.76474709e+02 ... -2.70665378e+02
+  -2.54564475e+02 -2.39844611e+02]
+ [-3.67201265e+02 -3.64587332e+02 -3.65248443e+02 ... -2.59968982e+02
+  -2.83193341e+02 -2.90347424e+02]
+ ...
+ [-4.85154625e+00 -4.30740569e+00 -1.54781513e+00 ...  1.89196942e+00
+  -8.84155391e-01 -4.26280939e+00]
+ [ 3.89818675e+00  8.77431029e-01 -5.64287047e-01 ...  1.22716819e+01
+   9.51003795e+00  8.65674255e+00]
+ [ 3.12500680e-13 -3.09973433e-14  1.06303536e-13 ... -9.24805693e-13
+  -5.19002047e-13 -7.55429461e-13]]
+(320, 320)
+[[ 2.92185511e+08  2.14037870e+08  3.26560414e+07 ... -7.38929953e+04
+   5.21329466e+04 -1.79649940e-08]
+ [ 3.30045148e+08  2.17731256e+08  1.42740982e+07 ... -6.42684245e+04
+   5.12982715e+04 -1.09576634e-08]
+ [ 2.65123735e+08  2.19509400e+08  4.52910827e+07 ... -7.92426224e+04
+   6.01053117e+04 -1.79476657e-08]
+ ...
+ [ 2.43804822e+08  2.15664264e+08 -1.84482972e+07 ... -8.94430819e+04
+   5.30756609e+04 -1.60916951e-08]
+ [ 2.59533118e+08  2.25499955e+08 -4.36910377e+06 ... -6.82625140e+04
+   5.61783255e+04 -1.27537943e-08]
+ [ 2.37847894e+08  2.17804135e+08 -1.88322228e+07 ... -7.96796214e+04
+   5.84913687e+04 -1.36525811e-08]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="klasifikasi-data">
+<h2>Klasifikasi Data<a class="headerlink" href="#klasifikasi-data" title="Permalink to this heading">#</a></h2>
+<p>Klasifikasi data menggunakan Euclidian</p>
+<p>Variabel jarak didapatkan dari nilai absolut matrix Bobot dikurangi dengan Bobot Testing. Nilai Bobot Testing didapatkan dari matrix data testing dikalikan dengan transpose proyeksi sehinggga hasilnya adalah matrix 1 x 280.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">Euclidean</span><span class="p">(</span><span class="n">BobotPca</span><span class="p">,</span> <span class="n">BobotTesting</span><span class="p">,</span> <span class="n">JumlahPose</span><span class="p">):</span>
+    <span class="c1"># Menghitung jarak Euclidean antara BobotPca dan BobotTesting</span>
+    <span class="n">Jarak</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">BobotPca</span> <span class="o">-</span> <span class="n">BobotTesting</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Mencari indeks minimum dan Pose</span>
+    <span class="n">Pose</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">Jarak</span><span class="p">)</span>
+
+    <span class="c1"># Menghitung kelas (Class) dan pose</span>
+    <span class="n">Class</span> <span class="o">=</span> <span class="p">(</span><span class="n">Pose</span> <span class="o">//</span> <span class="n">JumlahPose</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">Pose</span> <span class="o">=</span> <span class="p">(</span><span class="n">Pose</span> <span class="o">%</span> <span class="n">JumlahPose</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">Class</span><span class="p">,</span> <span class="n">Pose</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="uji-data">
+<h3>Uji Data<a class="headerlink" href="#uji-data" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">calculate_accuracy_euclidean</span><span class="p">(</span><span class="n">bobot_proyeksi</span><span class="p">,</span> <span class="n">data_testing</span><span class="p">,</span> <span class="n">proyeksi</span><span class="p">,</span> <span class="n">labels_testing</span><span class="p">,</span> <span class="n">jumlah_citra_train</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+    <span class="n">bobot_proyeksi_iterasi</span> <span class="o">=</span> <span class="n">bobot_proyeksi</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="n">predicted_classes</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data_testing</span><span class="p">)):</span>
+        <span class="n">bobot_uji</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">data_testing</span><span class="p">[[</span><span class="n">j</span><span class="p">]],</span> <span class="n">proyeksi</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+        <span class="n">Class</span><span class="p">,</span> <span class="n">Pose</span> <span class="o">=</span> <span class="n">Euclidean</span><span class="p">(</span><span class="n">bobot_proyeksi_iterasi</span><span class="p">,</span> <span class="n">bobot_uji</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="n">i</span><span class="p">],</span> <span class="n">jumlah_citra_train</span><span class="p">)</span>
+        <span class="n">predicted_classes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Class</span><span class="p">)</span>
+
+    <span class="n">predicted_classes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">predicted_classes</span><span class="p">)</span>
+
+    <span class="n">true_labels</span> <span class="o">=</span> <span class="n">labels_testing</span>
+
+    <span class="n">correct_predictions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">predicted_classes</span> <span class="o">==</span> <span class="n">true_labels</span><span class="p">)</span>
+    <span class="n">total_data</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">true_labels</span><span class="p">)</span>
+
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">correct_predictions</span> <span class="o">/</span> <span class="n">total_data</span>
+    <span class="k">return</span> <span class="n">accuracy</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Uji data dengan menggunakan 5-50 fitur</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">akurasi_euclidean</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">51</span><span class="p">):</span>
+    <span class="n">accuracy_euclidean</span> <span class="o">=</span> <span class="n">calculate_accuracy_euclidean</span><span class="p">(</span><span class="n">bobot_proyeksi</span><span class="p">,</span> <span class="n">data_testing</span><span class="p">,</span> <span class="n">proyeksi</span><span class="p">,</span> <span class="n">labels_testing</span><span class="p">,</span> <span class="n">jumlah_citra_train</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">akurasi_euclidean</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">accuracy_euclidean</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan hasil akurasi untuk setiap iterasi</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">acc</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">akurasi_euclidean</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi (Euclidean) jika </span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s2"> fitur yang digunakan: </span><span class="si">{</span><span class="n">acc</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="n">iterasi</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">iterasi</span><span class="p">,</span> <span class="n">akurasi_euclidean</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Grafik Akurasi (Euclidean) pada n Fitur yang digunakan&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Jumlah fitur yang digunakan&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Akurasi (Euclidean)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">iterasi</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi (Euclidean) jika 5 fitur yang digunakan: 82.50%
+Akurasi (Euclidean) jika 6 fitur yang digunakan: 88.75%
+Akurasi (Euclidean) jika 7 fitur yang digunakan: 90.00%
+Akurasi (Euclidean) jika 8 fitur yang digunakan: 91.25%
+Akurasi (Euclidean) jika 9 fitur yang digunakan: 92.50%
+Akurasi (Euclidean) jika 10 fitur yang digunakan: 93.75%
+Akurasi (Euclidean) jika 11 fitur yang digunakan: 93.75%
+Akurasi (Euclidean) jika 12 fitur yang digunakan: 93.75%
+Akurasi (Euclidean) jika 13 fitur yang digunakan: 93.75%
+Akurasi (Euclidean) jika 14 fitur yang digunakan: 95.00%
+Akurasi (Euclidean) jika 15 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 16 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 17 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 18 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 19 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 20 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 21 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 22 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 23 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 24 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 25 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 26 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 27 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 28 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 29 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 30 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 31 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 32 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 33 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 34 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 35 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 36 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 37 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 38 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 39 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 40 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 41 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 42 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 43 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 44 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 45 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 46 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 47 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 48 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 49 fitur yang digunakan: 96.25%
+Akurasi (Euclidean) jika 50 fitur yang digunakan: 96.25%
+</pre></div>
+</div>
+<img alt="../_images/df5512bdaab3f63aeed9b2635c04181e2f803aa09c6c413f292c2fc89c74daa9.png" src="../_images/df5512bdaab3f63aeed9b2635c04181e2f803aa09c6c413f292c2fc89c74daa9.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="kesimpulan">
+<h2><span class="math notranslate nohighlight">\(Kesimpulan\)</span><a class="headerlink" href="#kesimpulan" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Akurasi tertinggi dengan minimal fitur adalah menggunakan 15 fitur dan akurasinya mencapai 96.25%</p></li>
+<li><p>Dapat disimpulkan juga semakin banyak fitur maka semakin tinggi akurasinya.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./tugas-pendat"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Tugas-8.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Ensamble Stacking (Tugas 8)</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><span class="math notranslate nohighlight">\(UAS\)</span> <span class="math notranslate nohighlight">\(Pengolahan\)</span> <span class="math notranslate nohighlight">\(Citra\)</span> <span class="math notranslate nohighlight">\(Semester\)</span> <span class="math notranslate nohighlight">\(Gasal\)</span> <span class="math notranslate nohighlight">\(2023/2024\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pengolahan-citra-wajah"><span class="math notranslate nohighlight">\(Pengolahan\)</span> <span class="math notranslate nohighlight">\(Citra\)</span> <span class="math notranslate nohighlight">\(Wajah\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-component-analysis-pca"><span class="math notranslate nohighlight">\(Principal\)</span> <span class="math notranslate nohighlight">\(Component\)</span> <span class="math notranslate nohighlight">\(Analysis\)</span> <span class="math notranslate nohighlight">\((PCA)\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi"><span class="math notranslate nohighlight">\(Klasifikasi\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#euclidean-distance"><span class="math notranslate nohighlight">\(Euclidean\)</span> <span class="math notranslate nohighlight">\(Distance\)</span></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memanggil-data-dari-local"><span class="math notranslate nohighlight">\(Memanggil\)</span> <span class="math notranslate nohighlight">\(Data\)</span> <span class="math notranslate nohighlight">\(dari\)</span> <span class="math notranslate nohighlight">\(local\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#memisahkan-data-training-dan-data-testing">Memisahkan Data Training dan Data Testing</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-fitur"><span class="math notranslate nohighlight">\(Ekstraksi\)</span> <span class="math notranslate nohighlight">\(Fitur\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-pca-principal-component-analysis">Menggunakan PCA (Principal Component Analysis)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-rata-rata">1. Hitung rata-rata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-zero-mean">2. Hitung zero mean</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-covariance">3. Hitung Covariance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvaluenya-dan-eigenvectornya">4. Cari EigenValuenya dan EigenVectornya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-proyeksi-dan-bobot">5. Hitung Proyeksi dan Bobot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi-data">Klasifikasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uji-data">Uji Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan"><span class="math notranslate nohighlight">\(Kesimpulan\)</span></a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Arbil Shofiyurrahman
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
